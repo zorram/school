@@ -5,18 +5,16 @@
 	<title>Mileage of a Vehicle</title>
 	<script>
 		function calcMileage() {
-		let begin = document.getElementById('begin').value;
-		let end = document.getElementById('end').value;
-		let gallons = document.getElementById('gallons').value;
-		let answer = (end-begin)/gallons;
-		document.getElementById('output').innerHTML = answer;
+			let begin = document.getElementById('begin').value;
+			let end = document.getElementById('end').value;
+			let gallons = document.getElementById('gallons').value;
+			let answer = (end-begin)/gallons;
+			document.getElementById('output').innerHTML = answer;
 		}
 	</script>
 </head>
 <body>
-	<h1>
-		Mileage of your Vehicle:
-	</h1>
+	<h1>Mileage of your Vehicle:</h1>
 	<input type="number" placeholder="Begining Otometer" id="begin">
 	<input type="number" placeholder="Ending Otometer" id="end">
 	<input type="number" placeholder="Gallons of Gasoline" id="gallons">
