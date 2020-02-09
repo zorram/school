@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Torus Volume </title>
+		<script>
+			function torusVolume() {
+				let a = Number.parseFloat(document.getElementById('inner').value);
+				let b = Number.parseFloat(document.getElementById('outer').value);
+				let n = 3.14159;
+				let v = (n*n*(a + b)*((a-b)*(a-b))) / 4;
+				document.getElementById('output').innerHTML = v.toFixed(2);
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="inner" placeholder="Inner Radius">
+			<input type="text" id="outer" placeholder="Outer Radius">
+			<button type="button" onclick="torusVolume()">Calculate</button>
+		</form>
+		<div id="output"></div>
+	</body>
+</html>

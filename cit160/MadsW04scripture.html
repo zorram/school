@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personalized Scripture</title>
+	<script>
+		function applyScripture() {
+			let name = document.getElementById('nameInputBox').value;
+			let scripture = "And now it came to pass that the burdens which were laid upon " + name + " were made light; yea, the Lord did strengthen " + name + " that he/she could bear up his/her burdens with ease, and " + name + " did submit cheerfully and with patience to all the will of the Lord.";
+			document.getElementById('outputDiv').innerHTML = scripture;
+		}
+	</script>
+</head>
+<body>
+	<h1>Mosiah 24:15</h1>
+		Please enter your name: <input type="text" id="nameInputBox">
+	<button type="button" onclick="applyScripture()">Verse</button>
+	<div id="outputDiv"></div>
+</body>
+</html>

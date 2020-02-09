@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rate of Change</title>
+		<script>
+			function calcRate() {
+			let currPrice= document.getElementById('currPrice').value;
+			let prevPrice= document.getElementById('prevPrice').value;
+			let answer= (currPrice-prevPrice)/prevPrice;
+			document.getElementById('output').innerHTML = answer;
+			}
+		</script>
+</head>
+<body>
+	<input type="number" id="currPrice" placeholder="Current Price">
+	<input type="number" id="prevPrice" placeholder="Previous Price">
+		<button type="button" onclick="calcRate()">Calculate</button>
+			<div id="output"></div>
+</body>
+</html>

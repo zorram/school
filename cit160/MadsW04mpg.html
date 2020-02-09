@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mileage of a Vehicle</title>
+	<script>
+		function calcMileage() {
+		let begin = document.getElementById('begin').value;
+		let end = document.getElementById('end').value;
+		let gallons = document.getElementById('gallons').value;
+		let answer = (end-begin)/gallons;
+		document.getElementById('output').innerHTML = answer;
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		Mileage of your Vehicle:
+	</h1>
+	<input type="number" placeholder="Begining Otometer" id="begin">
+	<input type="number" placeholder="Ending Otometer" id="end">
+	<input type="number" placeholder="Gallons of Gasoline" id="gallons">
+		<button type="button" onclick="calcMileage()">Calculate</button>
+			<div id="output"></div>MPG
+</body>
+</html>
